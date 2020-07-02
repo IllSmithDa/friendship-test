@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import axios from 'axios';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Homepage from './Components/Homepage/Homepage';
+import Profilepage from './Components/Profilepage/Profilepage';
 import './App.css';
 
-function App() {
+axios.defaults.withCredentials = true;
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/profile/:username" component={Profilepage} />
+      </Switch>
+    </Router>
   );
 }
-
-export default App;

@@ -1,0 +1,36 @@
+
+.user-create-section, .user-login-section {
+  padding: 2em;
+}
+.user-create-section div, .user-login-section div{
+  margin: 2em;
+}
+.create-button span {
+  margin: 2em;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 1.2em;
+  background-color: #111111;
+  border-color: #111111;
+  color: #FFF;
+  height: 42px;
+  padding: 5px 15px;
+  cursor: pointer;
+  outline: none;
+}
+.all-users-section {
+  padding: 2em;
+}
+.name-section-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.name-section {
+  margin: 1em;
+  height: 50px;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  cursor: pointer;
+}

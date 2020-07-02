@@ -1,0 +1,36 @@
+.request-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.requestform-container{
+    padding: 1em;
+    margin: 1em;
+    height: 100px;
+    background-color: rgba(3,160,224,.2);
+}
+.request-data{
+  text-align: center;
+  padding: 1em;
+}
+.request-button {
+  text-align: center;
+}
+.request-button span, .friendship-button, .logout-button span{
+  margin: 2em;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 1.2em;
+  background-color: #111111;
+  border-color: #111111;
+  color: #FFF;
+  height: 42px;
+  padding: 5px 15px;
+  cursor: pointer;
+  outline: none;
+}
+.friendship-data {
+  margin: 2em;
+}
+.logout-button{
+  margin-top: 2em;
+}
